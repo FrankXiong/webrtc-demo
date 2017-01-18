@@ -10,21 +10,24 @@
 
   <body>
     <div class="container">
-      <video src="" autoplay poster="posterimage.jpg"></video>
-      <canvas id="canvas"></canvas>
-      <button id="capture">拍照</button>
-      <button id="open">开启摄像头</button>
-      <div class="filter-bar">
-        <div class="">滤镜：</div>
-        <span id="blur" class="filter-btn">模糊</span>
-        <span id="sepia" class="filter-btn">深褐</span>
-        <span id="brightness" class="filter-btn">亮度</span>
-        <span id="contrast" class="filter-btn">对比度</span>
-        <span id="grayscale" class="filter-btn">灰度</span>
-        <span id="invert" class="filter-btn">反转</span>
-        <span id="huerotate" class="filter-btn">色相旋转</span>
-        <span id="saturate" class="filter-btn">饱和度</span>
-        <span id="opacity" class="filter-btn">透明度</span>
+      <div class="main">
+        <video src="" autoplay poster="posterimage.jpg"></video>
+        <canvas id="canvas" class="canvas"></canvas>
+        <button id="open" class="btn btn-open">开启摄像头</button>
+      </div>
+      <div class="ctrl-bar">
+        <div class="filters">
+          <span id="blur" class="filter-btn">模糊</span>
+          <span id="sepia" class="filter-btn">深褐</span>
+          <span id="brightness" class="filter-btn">亮度</span>
+          <span id="contrast" class="filter-btn">对比度</span>
+          <span id="grayscale" class="filter-btn">灰度</span>
+          <span id="invert" class="filter-btn">反转</span>
+          <span id="huerotate" class="filter-btn">色相旋转</span>
+          <span id="saturate" class="filter-btn">饱和度</span>
+          <span id="opacity" class="filter-btn">透明度</span>
+        </div>
+        <button id="capture" class="btn btn-capture">拍照</button>
       </div>
     </div>
 
